@@ -1,0 +1,473 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+/*font-family: 'IM Fell French Canon', serif;
+*/
+
+/*font-family: 'EB Garamond', serif;
+*/
+
+/*Navy #002469
+Maroon #742d36
+Y. Tan #a3965f
+L Tan #d2cdaf
+Font color #161616
+Lite grey #8c8c8c
+dark grey #464646
+Darker grey #2b2b2b
+Lighter grey #cccccc
+off-white font color #e9eaee*/
+
+
+
+/***** GENERIC STYLES *************/
+/**********************************/
+
+
+body{
+	font-family: 'EB Garamond', serif;
+	color: #161616;
+}
+
+h1{
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 1.5em;
+
+}
+
+h4{
+	color: #002469;
+	text-transform: uppercase;
+	margin: 0;
+
+}
+
+h5{
+	font-size: 1em;
+	text-transform: uppercase;
+	margin: 0;
+}
+a{
+	color: #742d36;
+}
+
+.wrapper{
+	margin: 0 auto;
+	width: 80%;
+	
+}
+
+header{
+	background: url(../img/header.jpg);
+	background-repeat: repeat-x;
+	height: 100%;
+	padding: 10px;
+}
+
+header p{
+	font-family: 'IM Fell French Canon', serif;
+	font-style: italic;
+	color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	font-size: 1.1em;
+}
+
+header a{
+	display: none;
+}
+
+header .biglogo {
+	display: none;
+}
+
+header img{
+	display: block;
+	margin: 0 auto;
+	width: 35%;
+}
+
+.redbox{
+	background-color: #742d36;
+	-webkit-box-shadow: inset 0px 9px 20px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 9px 20px -6px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 9px 20px -6px rgba(0,0,0,0.75);
+}
+
+/*DROP DOWN STYLES*/
+#cssmenu {
+  font-size: 1em;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px 0px;
+}
+#cssmenu ul {
+  width: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  border: 1px solid #ece6e8;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+#cssmenu > ul li#responsive-tab {
+  display: none;
+  /* Hide for large screens */
+
+}
+#cssmenu > ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+#cssmenu > ul li.right {
+  float: right;
+}
+
+#cssmenu > ul li a {
+  display: block;
+  padding: 12px 24px 11px 24px;
+  text-decoration: none;
+  color: #161616;
+  text-shadow: 0px 1px 0px #fff;
+}
+#cssmenu > ul li a.active,
+#cssmenu > ul li a:hover {
+  background: #90575e;
+  color: #fff;
+  text-shadow: 0px 1px 0px #000;
+}
+
+.applaw{
+	background: url(../img/texture.jpg);
+	background-repeat: repeat-x;
+}
+
+.applaw h1{
+	margin: 0px 0px 0px 25px;
+	padding: 25px;
+}
+
+.wrapper p{
+	margin: 20px 0px;
+}
+.tanbox{
+	background-color: #d2cdaf;
+	padding: 20px 30px;
+}
+
+.tanbox ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.tanbox > ul li:first-child{
+	margin-top: 5px;
+}
+
+.attorneys ul{
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+}
+
+.attorneys img{
+	display: none;
+}
+
+.attorneys li{
+	line-height: 25px;
+}
+
+.practiceareas{
+	margin-top: 30px;
+}
+
+.practiceareas h1{
+	margin: 0px 0px 0px 15px;
+	color: #161616;
+   }
+
+.practiceareas h1:hover{
+   	color: white;
+   }
+
+#cssmenu2, #cssmenu2 ul, #cssmenu2 li, #cssmenu2 a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 1;
+	font-size: 1em;
+	position: relative;
+}
+#cssmenu2 > ul > li:first-child {
+	background: url(../img/texture.jpg);
+}
+#cssmenu2 > ul > li:first-child > a {
+	padding: 15px 10px;
+}
+
+#cssmenu2 > ul > li a:first-child:hover{
+	color: white;
+}
+
+#cssmenu2 > ul > li > a > span {
+	display: block;
+	padding: 12px 70px;
+}
+#cssmenu2 > ul > li > a:hover {
+	text-decoration: none;
+}
+#cssmenu2 > ul > li.active {
+	border-bottom: none;
+}
+#cssmenu2 > ul > li.has-sub > a span {
+	background: url(../img/plusicon.png) 10% center no-repeat;
+	background-size: 32px;
+}
+#cssmenu2 > ul > li.has-sub.active > a span {
+	background: url(../img/minusicon.png) 10% center no-repeat;
+}
+#cssmenu2 ul ul {
+	display: none;
+	border-right: 1px solid #a2a194;
+	border-left: 1px solid #a2a194;
+}
+#cssmenu2 ul ul li {
+	padding: 10px;
+	border-bottom: 1px solid #8c8c8c;
+	border-top: none;
+	background-color: #cccccc;
+}
+#cssmenu2 ul ul li:last-child {
+	border-bottom: none;
+}
+#cssmenu2 ul ul a {
+	padding: 1px 0px 1px 40px;
+	display: block;
+	color: #161616;
+	font-size: 1em;
+}
+
+
+
+
+footer{
+	background-image: url(../img/footer.jpg);
+	color: #e9eaee;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.contactinfo{
+	width: 45%;
+	display: block;
+	margin: 0 auto;
+	font-size: 0.9em;
+}
+
+.contactinfo ul{
+	list-style: none;
+	padding: 0;
+}
+
+.copyright, .sitemap{
+	font-size: .7em;
+	display: inline-block;
+}
+
+.sitemap a{
+	color: #e9eaee;
+}
+
+.copyright{
+    text-align: left;
+    margin-right: 35%;
+}
+
+.sitemap{
+	text-align: right;
+}
+
+.practiceareastablet{
+	display: none;
+}
+
+
+
+
+@media (max-width: 600px) {
+  #cssmenu > ul {
+    width: 100%;
+  }
+
+  #cssmenu > ul li#responsive-tab {
+    display: block;
+  }
+ /* #cssmenu > ul li#responsive-tab a {
+    background: url('../img/arrow.jpg') no-repeat;
+    background-position: 95%
+  }*/
+
+  #cssmenu > ul li#responsive-tab a:hover {
+    background-color: #90575e;
+    background-position: 95% 135%;
+  }
+  #cssmenu > ul li {
+    display: none;
+  }
+  #cssmenu > ul li.right {
+    float: none;
+  }
+ }
+
+
+@media (min-width: 600px) {
+
+.wrapper{
+	width: 100%;
+}
+
+header p{
+	font-size: 1.5em;
+}
+
+header .smalllogo{
+	display: none;
+}
+
+header .biglogo{
+	display: block;
+}
+
+	#cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+
+  #cssmenu ul{
+  	background-color: #742d36;
+  	border: none;
+  }
+
+  #cssmenu ul li a{
+  	text-shadow: none;
+  	padding: 0;
+  }
+
+  #cssmenu ul li{
+  	/*display: inline-block;
+  	width: 15%;*/
+  	margin-right: 15px;
+  }
+
+  #cssmenu ul li.active, #cssmenu ul li.pa, #cssmenu ul li.rc{
+  	width: 16%;
+  	margin-right: 1px;
+  	margin-left: 25px;
+  }
+
+  .practiceareas{
+  	display: none;
+  }
+
+  .practiceareastablet h1{
+  margin: 0;
+  padding: 25px 15px;
+	}
+
+  .pattern{
+	background: url(../img/texture.jpg);
+	padding: 31px 10px;
+	}
+
+   #cssmenu2 ul {
+	  border-right: 1px solid #a2a194;
+	  border-left: 1px solid #a2a194;
+	  }
+   #cssmenu2 ul li {
+    padding: 0;
+    border-bottom: 1px solid #8c8c8c;
+    border-top: none;
+    background-color: #cccccc;
+   }
+   #cssmenu2 ul li:last-child {
+    border-bottom: none;
+    height: 224px;
+   }
+   #cssmenu2 ul a {
+    padding: 10px 0px 10px 12px;
+    display: block;
+    color: #161616;
+    font-size: 1em;
+  }
+
+  .practiceareastablet{
+    width: 25%;
+    float: left;
+    display: block;
+  }
+
+  .attorneys{
+  	width: 24.8%;
+  	float: right;
+  
+  }
+
+  .attorneys img{
+  	display: block;
+  	margin: 15px auto 10px auto;
+
+  }
+
+  .attorneys h1{
+  	margin: 0px;
+  }
+
+  .attorneys ul{
+  	text-align: center;
+  }
+
+  .applaw{
+  	width: 50%;
+  	float: left;
+  	border-right: 1px solid #b2b2b2;
+    height: 900px;
+  }
+
+  .applaw p{
+  	margin: 35px 33px 25px 10px;
+  }
+
+  .tanbox{
+  	float: left;
+  	width: 75%;
+  	margin: 0px 10px;
+  	height: 677px;
+  }
+ }

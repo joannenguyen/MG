@@ -1,0 +1,512 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+/*font-family: 'IM Fell French Canon', serif;
+*/
+
+/*font-family: 'EB Garamond', serif;
+*/
+
+/*Navy #002469
+Maroon #742d36
+Y. Tan #a3965f
+L Tan #d2cdaf
+Font color #161616
+Lite grey #8c8c8c
+dark grey #464646
+Darker grey #2b2b2b
+Lighter grey #cccccc
+off-white font color #e9eaee*/
+
+
+
+/***** GENERIC STYLES *************/
+/**********************************/
+
+
+body{
+	font-family: 'EB Garamond', serif;
+	color: #161616;
+}
+
+h1{
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 1.5em;
+
+}
+
+h2{
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.4em;
+}
+h4{
+	color: #002469;
+	text-transform: uppercase;
+	margin: 0;
+
+}
+
+
+h5{
+	font-size: 1em;
+	text-transform: uppercase;
+	margin: 0;
+}
+a{
+	color: #742d36;
+}
+
+.wrapper{
+	margin: 0 auto;
+	width: 80%;
+	max-width: 900px;
+}
+
+header{
+	background: url(../img/header.jpg);
+	background-repeat: repeat-x;
+	height: 100%;
+	padding: 10px;
+}
+
+header p{
+	font-family: 'IM Fell French Canon', serif;
+	font-style: italic;
+	color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	font-size: 1.1em;
+}
+
+header a{
+	display: none;
+}
+
+header .biglogo {
+	display: none;
+}
+
+header img{
+	display: block;
+	margin: 0 auto;
+	width: 35%;
+}
+
+.redbox{
+	background-color: #742d36;
+	-webkit-box-shadow: inset 0px 9px 20px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 9px 20px -6px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 9px 20px -6px rgba(0,0,0,0.75);
+}
+
+/*DROP DOWN STYLES*/
+#cssmenu {
+  font-size: 1em;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px 0px;
+}
+#cssmenu ul {
+  width: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  border: 1px solid #ece6e8;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+#cssmenu > ul li#responsive-tab {
+  display: none;
+  /* Hide for large screens */
+
+}
+#cssmenu > ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+#cssmenu > ul li.right {
+  float: right;
+}
+
+#cssmenu > ul li a {
+  display: block;
+  padding: 12px 24px 11px 24px;
+  text-decoration: none;
+  color: #161616;
+  text-shadow: 0px 1px 0px #fff;
+}
+#cssmenu > ul li a.active,
+#cssmenu > ul li a:hover {
+  background: #90575e;
+  color: #fff;
+  text-shadow: 0px 1px 0px #000;
+}
+
+.attorneyinfo{
+	background: url(../img/texture.jpg);
+	background-repeat: repeat-x;
+}
+
+.attorneyinfo h1{
+  margin: 0px;
+  padding: 25px;
+}
+.attorneysection img{
+  display: block;
+  margin: 30px auto 25px auto;
+  width: 100%;
+}
+
+.tanbox{
+  background-color: #d2cdaf;
+  padding: 10px 28px;
+}
+
+.tanbox p{
+  margin: 0;
+}
+
+.tanbox ul {
+    padding-left: 18px;
+}
+
+.attorneys h1 {
+    margin: 0px 0px 0px 15px;
+    color: #161616;
+  }
+
+ .attorneys h1:hover{
+    color: white;
+   }
+
+#cssmenu2, #cssmenu2 ul, #cssmenu2 li, #cssmenu2 a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-size: 1em;
+  position: relative;
+}
+#cssmenu2 > ul > li:first-child {
+  background: url(../img/texture.jpg);
+}
+#cssmenu2 > ul > li:first-child > a {
+  padding: 15px 10px;
+}
+
+#cssmenu2 > ul > li a:first-child:hover{
+  color: white;
+}
+
+#cssmenu2 > ul > li > a > span {
+  display: block;
+  padding: 12px 70px;
+}
+#cssmenu2 > ul > li > a:hover {
+  text-decoration: none;
+}
+#cssmenu2 > ul > li.active {
+  border-bottom: none;
+}
+#cssmenu2 > ul > li.has-sub > a span {
+  background: url(../img/plusicon.png) 8% center no-repeat;
+  background-size: 32px;
+}
+#cssmenu2 > ul > li.has-sub.active > a span {
+  background: url(../img/minusicon.png) 8% center no-repeat;
+}
+#cssmenu2 ul ul {
+  display: none;
+  border-right: 1px solid #a2a194;
+  border-left: 1px solid #a2a194;
+}
+#cssmenu2 ul ul li {
+  padding: 0;
+  border-bottom: 1px solid #8c8c8c;
+  border-top: none;
+  background-color: #cccccc;
+}
+#cssmenu2 ul ul li:last-child {
+  border-bottom: none;
+}
+#cssmenu2 ul ul a {
+  padding: 10px 0px 10px 35px;
+  display: block;
+  color: #161616;
+  font-size: 1em;
+}
+
+
+
+footer{
+	background-image: url(../img/footer.jpg);
+	color: #e9eaee;
+  padding-top: 10px;
+	text-align: center;
+}
+
+.contactinfo{
+	width: 45%;
+	display: block;
+	margin: 0 auto;
+	font-size: 0.9em;
+}
+
+.contactinfo ul{
+	list-style: none;
+	padding: 0;
+}
+
+.copyright, .sitemap{
+	font-size: .7em;
+	display: inline-block;
+}
+
+.sitemap a{
+	color: #e9eaee;
+}
+
+.copyright{
+    text-align: left;
+    margin-right: 35%;
+}
+
+.sitemap{
+	text-align: right;
+}
+
+.attorneystablet{
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #cssmenu > ul {
+    width: 100%;
+  }
+
+  #cssmenu > ul li#responsive-tab {
+    display: block;
+  }
+ /* #cssmenu > ul li#responsive-tab a {
+    background: url('../img/arrow.jpg') no-repeat;
+    background-position: 95%
+  }*/
+
+  #cssmenu > ul li#responsive-tab a:hover {
+    background-color: #90575e;
+    background-position: 95% 135%;
+  }
+  #cssmenu > ul li {
+    display: none;
+  }
+  #cssmenu > ul li.right {
+    float: none;
+  }
+}
+
+
+@media (min-width: 600px) {
+
+  .wrapper{
+    width: 90%;
+  }
+  #cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+
+  #cssmenu ul{
+    background-color: #742d36;
+    border: none;
+  }
+
+  #cssmenu ul li a{
+    text-shadow: none;
+    padding: 0;
+  }
+
+  #cssmenu ul li{
+    /*display: inline-block;
+    width: 15%;*/
+    margin: 0;
+  }
+
+  #cssmenu ul li.active, #cssmenu ul li.pa, #cssmenu ul li.rc{
+    width: 10%;
+  }
+
+  header p{
+    font-size: 1.5em;
+  }
+
+  header img{
+    max-width: 25%;
+  }
+
+  .attorneyinfo h1{
+    margin: 0px;
+    padding: 21px 25px 23px 36px;
+  }
+
+  .attorneys{
+    display: none;
+  }
+
+  .attorneystablet h1{
+  margin: 0;
+  padding: 25px 15px;
+}
+
+  #cssmenu2 ul {
+  border-right: 1px solid #a2a194;
+  border-left: 1px solid #a2a194;
+  }
+  #cssmenu2 ul li {
+    padding: 0;
+    border-bottom: 1px solid #8c8c8c;
+    border-top: none;
+    background-color: #cccccc;
+  }
+  #cssmenu2 ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 270px;
+  }
+  #cssmenu2 ul a {
+    padding: 10px 0px 10px 25px;
+    display: block;
+    color: #161616;
+    font-size: 1em;
+  }
+
+  .attorneystablet{
+    width: 25%;
+    float: left;
+    display: block;
+  }
+
+  .pagecontent {
+    width: 75%;
+    float: left;
+  }
+
+  .attorneysection{
+    margin: 0px 10px 0px 0px;
+    width: 46%;
+    display: inline-block;
+  }
+
+  .attorneysection img{
+    max-width: 100%;
+  }
+
+  .tanbox{
+    display: inline-block;
+    width: 42%;
+    padding: 10px 20px 44px 20px;
+    vertical-align: top;
+    margin-top: 30px;
+  }
+
+  ul ul {
+    padding: 0px;
+  }
+
+  .educationbox ul, .admissionbox ul, .membershipbox ul{
+    padding: 0px 0px 0px 18px;
+  }
+
+  .educationbox{
+    width: 45%;
+    float:left;
+    margin-right: 15px;
+
+  }
+
+  .admissionbox{
+    width: 51%;
+    float: left;
+  }
+
+  .membershipbox{
+    float: left;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (min-width: 800px) {
+
+  .wrapper{
+    position: relative;
+  }
+
+  .smalllogo{
+    display: none;
+  }
+
+  header .biglogo{
+    display: block;
+  }
+  .attorneysection{
+    display: inline-block;
+    float: right;
+    width: 50%;
+    margin-right: 0px;
+  }
+  .tanbox{
+    display: inline-block;
+    width: 45%;
+    float: right;
+  }
+
+  .attorneyandbox{
+    float: right;
+  }
+
+  .educationbox{
+    width: 44%;
+    float: left;
+    position: absolute;
+  }
+  .admissionbox{
+    width: 45%;
+    position: absolute;
+    top: 240px;
+  }
+
+  .membershipbox{
+    position: absolute;
+    top: 500px;
+    width: 50%;
+  }
+}
+
+
+
+
