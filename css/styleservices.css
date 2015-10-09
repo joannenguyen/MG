@@ -72,9 +72,9 @@ a{
 }
 
 header{
-	background: url(../img/header.jpg);
+	background: url(../img/header.png);
 	background-repeat: repeat-x;
-	height: 100%;
+	background-size: auto 100%;
 	padding: 10px;
 }
 
@@ -207,7 +207,7 @@ header img{
    }
 
 .practiceareas h1:hover{
-   	color: white;
+   	color: #90575e;
    }
 
 #cssmenu2, #cssmenu2 ul, #cssmenu2 li, #cssmenu2 a {
@@ -229,7 +229,7 @@ header img{
 }
 
 #cssmenu2 > ul > li a:first-child:hover{
-	color: white;
+	color: #90575e;
 }
 
 #cssmenu2 > ul > li > a > span {
@@ -317,7 +317,7 @@ footer{
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #cssmenu > ul {
     width: 100%;
   }
@@ -345,8 +345,12 @@ footer{
 
 @media (min-width: 600px) {
 
+.redbox .wrapper{
+	width: 80%;
+}
+
 .wrapper{
-	width: 100%;
+  width: 100%;
 }
 
 header p{
@@ -359,38 +363,8 @@ header .smalllogo{
 
 header .biglogo{
 	display: block;
+  max-width: 200px;
 }
-
-	#cssmenu > ul > li.collapsed {
-    display: inline-block !important;
-    *display: inline;
-    zoom: 1;
-  }
-  #cssmenu > ul ul li.collapsed {
-    display: block !important;
-  }
-
-  #cssmenu ul{
-  	background-color: #742d36;
-  	border: none;
-  }
-
-  #cssmenu ul li a{
-  	text-shadow: none;
-  	padding: 0;
-  }
-
-  #cssmenu ul li{
-  	/*display: inline-block;
-  	width: 15%;*/
-  	margin-right: 15px;
-  }
-
-  #cssmenu ul li.active, #cssmenu ul li.pa, #cssmenu ul li.rc{
-  	width: 16%;
-  	margin-right: 1px;
-  	margin-left: 25px;
-  }
 
   .practiceareas{
   	display: none;
@@ -471,3 +445,43 @@ header .biglogo{
   	height: 677px;
   }
  }
+ @media  (min-width: 800px){
+
+  .redbox .wrapper{
+    width: 100%;
+  }
+
+  #cssmenu{
+    text-align: center;
+  }
+    #cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+
+  #cssmenu ul{
+    background-color: #742d36;
+    border: none;
+  }
+
+  #cssmenu ul li a{
+    text-shadow: none;
+    padding: 0;
+    color: white;
+
+  }
+
+  #cssmenu ul li{
+    margin-right: 30px;
+  }
+
+  #cssmenu ul li.active, #cssmenu ul li.pa, #cssmenu ul li.rc{
+    width: auto;
+  }
+ }
+
+

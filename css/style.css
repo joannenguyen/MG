@@ -72,9 +72,9 @@ a{
 }
 
 header{
-	background: url(../img/header.jpg);
+	background: url(../img/header.png);
 	background-repeat: repeat-x;
-	height: 100%;
+	background-size: auto 100%;
 	padding: 10px;
 }
 
@@ -218,7 +218,7 @@ i p{
    }
 
    .highlightedprac h1:hover{
-   	color: white;
+   	color: #90575e;
    }
 
 
@@ -241,7 +241,7 @@ i p{
 }
 
 #cssmenu2 > ul > li a:first-child:hover{
-	color: white;
+	color: #90575e;
 }
 
 #cssmenu2 > ul > li > a > span {
@@ -365,7 +365,7 @@ input[type=submit] {
 
 /***** SPECIFIC STYLES ************/
 /**********************************/
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #cssmenu > ul {
     width: 100%;
   }
@@ -397,41 +397,6 @@ input[type=submit] {
   .wrapper{
   	width: 90%;
   }
-  #cssmenu > ul > li.collapsed {
-    display: inline-block !important;
-    *display: inline;
-    zoom: 1;
-  }
-  #cssmenu > ul ul li.collapsed {
-    display: block !important;
-  }
-
-  #cssmenu ul{
-  	background-color: #742d36;
-  	border: none;
-  }
-
-  #cssmenu ul li a{
-  	text-shadow: none;
-  	padding: 0;
-  }
-
-  #cssmenu ul li{
-  	/*display: inline-block;
-  	width: 15%;*/
-  	margin: 0;
-  }
-
-  #cssmenu ul li.active, #cssmenu ul li.pa, #cssmenu ul li.rc{
-  	width: 10%;
-  }
-
- /* #cssmenu ul li.last{
-  	text-align: right;
-  }
-  #cssmenu ul li.last, #cssmenu ul li.home{
-  	width: 5%;
-  }*/
 
   header p{
   	font-size: 1.5em;
@@ -540,8 +505,54 @@ input[type=submit] {
 		width: 90%;
 	}
 
+	.redbox .wrapper{
+		width: 100%;
+	}
+
+	#cssmenu{
+		text-align: center;
+	}
+
+	#cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+
+  #cssmenu ul{
+  	background-color: #742d36;
+  	border: none;
+  }
+
+  #cssmenu ul li a{
+  	text-shadow: none;
+  	padding: 0;
+  	color: white;
+  }
+
+  #cssmenu ul li{
+  	/*display: inline-block;
+  	width: 15%;*/
+  	margin: 0;
+  }
+
+  #cssmenu ul li.active, #cssmenu ul li.pa, #cssmenu ul li.rc{
+  	width: auto;
+  }
+
+ /* #cssmenu ul li.last{
+  	text-align: right;
+  }
+  #cssmenu ul li.last, #cssmenu ul li.home{
+  	width: 5%;
+  }*/
+
 	header .biglogo{
 		display: block;
+		max-width: 200px;
 	}
 
 	header .smalllogo{
@@ -566,7 +577,7 @@ input[type=submit] {
 	}
 
 	#cssmenu ul li{
-		margin-right: 10px;
+		margin-right: 30px;
 	}
 
 	.highlightedprac{
@@ -575,46 +586,93 @@ input[type=submit] {
 
 	.highlightedpracdesktop{
 		display: block;
+		text-align: center;
+	}
+
+	#cssmenu2 > ul > li:first-child {
+	margin-bottom: 30px;
+	margin-top: 40px;
+	}
+
+	#cssmenu2 > ul > li > a > span {
+		padding: 0px 70px;
+	}
+
+	#cssmenu2 h1{
+		color: #161616;
+		text-align: left;
 	}
 
 	#cssmenu2 ul li a{
 		color: white;
 	}
 	
+	#cssmenu2 h3{
+		width: 99%;
+    	text-align: center;
+	}
 
 	#cssmenu2 #second{
 		background-color: #8c8c8c;
 		display: inline-block;
-		padding: 10px 30px;
+		padding: 10px 64px;
+		margin-right: 10px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		vertical-align: bottom;
+	}
+
+	#cssmenu2 #second h3{
+		width: 100%;
 	}
 
 	#cssmenu2 #third{
 		background-color: #464646;
 		display: inline-block;
-		padding: 10px 30px;
+		padding: 0px 16.5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		vertical-align: bottom;
 	}
 
 	#cssmenu2 #fourth{
 		background-color: #c2bc9b;
 		display: inline-block;
-		padding: 10px 30px;
+		padding: 0px 15px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		vertical-align: bottom;
 	}
 
 	#cssmenu2 #fifth{
 		background-color: #a3965f;
 		display: inline-block;
-		padding: 10px 30px;
+		padding: 0px 15px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
 	}
 
 	#cssmenu2 #sixth{
 		background-color: #002469;
 		display: inline-block;
-		padding: 10px 30px;
+		padding: 0px 0px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
 	}
 
 	#cssmenu2 #seventh{
 		background-color: #742d36;
 		display: inline-block;
-		padding: 10px 30px;
+		padding: 0px 12.9px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+
+	footer{
+		margin-top: 30px;
 	}
 }

@@ -78,9 +78,9 @@ a{
 }
 
 header{
-	background: url(../img/header.jpg);
+	background: url(../img/header.png);
 	background-repeat: repeat-x;
-	height: 100%;
+	background-size: auto 100%;
 	padding: 10px;
 }
 
@@ -195,7 +195,7 @@ header img{
   }
 
  .attorneys h1:hover{
-    color: white;
+    color: #90575e;
    }
 
 #cssmenu2, #cssmenu2 ul, #cssmenu2 li, #cssmenu2 a {
@@ -217,7 +217,7 @@ header img{
 }
 
 #cssmenu2 > ul > li a:first-child:hover{
-  color: white;
+  color: #90575e;
 }
 
 #cssmenu2 > ul > li > a > span {
@@ -301,7 +301,7 @@ footer{
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #cssmenu > ul {
     width: 100%;
   }
@@ -332,35 +332,6 @@ footer{
   .wrapper{
     width: 90%;
   }
-  #cssmenu > ul > li.collapsed {
-    display: inline-block !important;
-    *display: inline;
-    zoom: 1;
-  }
-  #cssmenu > ul ul li.collapsed {
-    display: block !important;
-  }
-
-  #cssmenu ul{
-    background-color: #742d36;
-    border: none;
-  }
-
-  #cssmenu ul li a{
-    text-shadow: none;
-    padding: 0;
-  }
-
-  #cssmenu ul li{
-    /*display: inline-block;
-    width: 15%;*/
-    margin: 0;
-  }
-
-  #cssmenu ul li.active, #cssmenu ul li.pa, #cssmenu ul li.rc{
-    width: 10%;
-  }
-
   header p{
     font-size: 1.5em;
   }
@@ -466,13 +437,51 @@ footer{
     position: relative;
   }
 
+  .redbox .wrapper{
+    width: 100%;
+  }
+
   .smalllogo{
     display: none;
   }
 
   header .biglogo{
     display: block;
+    max-width: 200px;
   }
+
+  #cssmenu{
+    text-align: center;
+  }
+
+    #cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+
+  #cssmenu ul{
+    background-color: #742d36;
+    border: none;
+  }
+
+  #cssmenu ul li a{
+    text-shadow: none;
+    padding: 0;
+    color: white;
+  }
+
+  #cssmenu ul li{
+    margin-right: 30px;
+  }
+
+  #cssmenu ul li.active, #cssmenu ul li.pa, #cssmenu ul li.rc{
+    width: auto;
+  }
+
   .attorneysection{
     display: inline-block;
     float: right;
