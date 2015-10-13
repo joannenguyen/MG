@@ -464,7 +464,7 @@ input[type=submit] {
 
   .news1, .news2{
   	display: inline-block;
-  	width: 47%;
+  	width: 45%;
   	vertical-align: top;
   }
 
@@ -629,7 +629,7 @@ input[type=submit] {
 	#cssmenu2 #third{
 		background-color: #464646;
 		display: inline-block;
-		padding: 0px 16.5px;
+		padding: 0px 17px;
 		margin-right: 10px;
 		margin-bottom: 10px;
 		text-transform: uppercase;
@@ -640,7 +640,7 @@ input[type=submit] {
 		background-color: #c2bc9b;
 		display: inline-block;
 		padding: 0px 15px;
-		margin-right: 10px;
+		/*margin-right: 10px;*/
 		margin-bottom: 10px;
 		text-transform: uppercase;
 		vertical-align: bottom;
